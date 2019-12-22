@@ -1,2 +1,3 @@
-# teach-yourself-r
-Resources and suggestions for how to teach yourself R &amp; datasets and questions to get you started
+# Teach yourself R
+
+Please see [our wiki](https://github.com/zmml/teach-yourself-r/wiki) for more details.
