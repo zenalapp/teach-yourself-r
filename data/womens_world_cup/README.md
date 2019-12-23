@@ -20,7 +20,7 @@ Header | Definition
 `Player` | player name 
 `DOB` | date of birth 
 `Age` | age
-`Caps` |  ????
+`Caps` |  number of games played at the international level 
 `Goals` | number of goals 
 `Club` | club soccer team name 
 
