@@ -93,3 +93,23 @@ Header | Definition
 `Score 2` | score for team 2 
 `Round` | game round 
 
+## world_cup_2019.json
+
+Source: https://worldcup.sfg.io/matches
+
+This is a JSON file so it's a little different than the others. You can learn more about JSON files [here].(https://www.w3schools.com/whatis/whatis_json.asp)
+
+This dataset contains information on each game from the 2019 Women's World Cup including information about the venue, location, attendance, officials, winner, goals, substitutions, fouls, weather, attempts on goal and whether they were on or off target, corners, offside, pass accuracy and count, ball possession, distance covered, tackles, clearances, yellow and red cards, tactics, starting eleven and substitutes, 
+
+To use this data in R, you can run the following code:
+
+```
+# load library to parse json file (you may have to install this)
+library(jsonlite)
+
+# read in data
+wc_stats <- read_json('world_cup_2019.json', 
+  simplifyDataFrame = TRUE, simplifyVector = TRUE, flatten = TRUE)
+```
+
+Note that this dataframe is a little more complicated than what we're used to because in some cells there are actually other dataframes! So some of this might be a bit more challenging to parse. 
